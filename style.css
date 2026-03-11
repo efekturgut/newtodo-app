@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.app {
+  background: white;
+  width: 400px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#addBtn {
+  padding: 10px 14px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#addBtn:hover {
+  background-color: #2563eb;
+}
+
+#todoList {
+  list-style: none;
+}
+
+#todoList li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+#todoList li:hover {
+  background-color: #f1f5f9;
+}
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+#todoList button {
+  margin-left: 10px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+}
+
+#todoList button:hover {
+  background: #dc2626;
+}
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.filters button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
